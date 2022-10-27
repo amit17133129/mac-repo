@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Creating the file') {
             steps {
-                sh 'sudo echo "Dynamically changing the content !!" > index.html'
+                sh 'sudo echo "Changing the content on the github !!" > index.html'
                 sh 'sudo cp ./index.html /var/www/html/'
             }
         }
